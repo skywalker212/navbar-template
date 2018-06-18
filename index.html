@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Temp</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="./navbar.css">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa:700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+</head>
+
+<body>
+    <div class="navbar navbar-fixed">
+        <nav>
+            <div class="nav-wrapper">
+                <a href="#" class="left brand-logo">Brand Name</a>
+                <a href="#" data-target="mobile-demo" class="right sidenav-trigger">
+                    <i class="fa fa-bars"></i>
+                </a>
+                <ul class="right hide-on-med-and-down">
+                    <li>
+                        <a href="#">Link 1</a>
+                    </li>
+                    <li>
+                        <a href="#">Link 2</a>
+                    </li>
+                    <li>
+                        <a href="#">Link 3</a>
+                    </li>
+                    <li>
+                        <a href="#">Link 4</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="sidenav right-aligned" id="mobile-demo">
+            <a onclick="$('.sidenav').sidenav('close')" id="close-nav">&times;</a>
+            <ul>
+                <li>
+                    <a href="#">Link 1</a>
+                </li>
+                <li>
+                    <a href="#">Link 2</a>
+                </li>
+                <li>
+                    <a href="#">Link 3</a>
+                </li>
+                <li>
+                    <a href="#">Link 4</a>
+                </li>
+            </ul>
+
+        </div>
+        <script src="script.js"></script>
+        <div class="sidenav-overlay" style="display: none; opacity: 0;"></div>
+    </div>
+</body>
+
+</html>
